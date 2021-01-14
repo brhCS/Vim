@@ -205,11 +205,8 @@ workspace 9 output $rightMonitor
 # General programs to launch
 exec chromium
 exec dunst
-exec anki
 exec ~/ledger/scripts/notebook.sh
 exec ~/talon/result/bin/talon
-# exec ~/bin/discord
-exec i3-sensible-terminal
 
 for_window [class="Anki"] move container to workspace 4
 # for_window [class="Chromium"] move container to workspace 6
