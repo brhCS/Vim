@@ -117,8 +117,8 @@
 ;; Show when the garbage collector runs
 (setq gcmh-verbose t)
 
-;; Set the max GC run at 2GB of RAM
-(setq gcmh-high-cons-threshold #x80000000)
+;; Set the max GC run at 500 MB of RAM
+(setq gcmh-high-cons-threshold #x20000000)
 
 ;; Disable savehist-mode to improve performance and potentially avoid crashes:
 ;; https://github.com/syl20bnr/spacemacs/issues/8462
