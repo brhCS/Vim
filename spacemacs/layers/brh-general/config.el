@@ -43,7 +43,7 @@
 (setq split-height-threshold nil)
 
 ;; ledger-mode for beancount files
-(add-to-list 'auto-mode-alist '("\\beancount\\'" . ledger-mode))
+(add-to-list 'auto-mode-alist '("\\.beancount" . ledger-mode))
 
 ;; salt-mode for jinja files
 (add-to-list 'auto-mode-alist '("\\.jinja\\'" . salt-mode))
