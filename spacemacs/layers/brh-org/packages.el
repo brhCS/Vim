@@ -60,6 +60,9 @@
     ;; Don't ask for confirmation every time I hit C-c c
     (setq org-confirm-babel-evaluate nil)
 
+    ;; Don't indent src code blocks
+    (setq org-edit-src-content-indentation 0)
+
     ;; Setup persistence hooks for the clock
     (org-clock-persistence-insinuate)
 

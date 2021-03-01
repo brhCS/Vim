@@ -25,8 +25,7 @@
   (use-package nix-update))
 
 (defun brh-general/init-jupyter ()
-  (use-package jupyter
-    :init (setq jupyter-api-authentication-method 'none)))
+  (use-package jupyter))
 
 (defun brh-general/init-gcmh ()
   (use-package gcmh
