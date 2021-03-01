@@ -7,6 +7,7 @@
                      :repo "bhipple/dumb-jump"
                      :branch "helm-bytecode-fix"))
   gcmh
+  jupyter
   nix-update
   s
   solarized-theme
@@ -22,6 +23,10 @@
 
 (defun brh-general/init-nix-update ()
   (use-package nix-update))
+
+(defun brh-general/init-jupyter ()
+  (use-package jupyter
+    :init (setq jupyter-api-authentication-method 'none)))
 
 (defun brh-general/init-gcmh ()
   (use-package gcmh
