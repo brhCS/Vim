@@ -114,6 +114,11 @@
 (add-hook 'java-mode-hook (lambda () #'smartparens-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; LSP Settings
+
+(with-eval-after-load 'lsp-mode (add-to-list 'lsp-file-watch-ignored-directories (getenv "HOME")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Performance / Garbage Collector Optimizations
 ;; Much of this logic is deferred to spacemancs and gcmh:
 ;; https://gitlab.com/koral/gcmh/-/tree/master
